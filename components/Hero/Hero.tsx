@@ -1,15 +1,28 @@
+'use client'
 import { ArrowRight } from "lucide-react";
 import { Button } from "../ui/button";
 import BackgroundSquares from "../Backgrounds/BackgroundSquares";
 import Link from "next/link";
-import { config } from "@/lib/config";
+import Typewriter from 'typewriter-effect';
 
 export default function Hero() {
   return (
     <section className="flex flex-col items-center justify-center px-4 text-white lg:px-32">
       <div className="relative flex flex-col items-center justify-start w-full py-24 mt-4">
         <h1 className="text-4xl md:text-6xl mt-8 text-center max-w-[700px] font-extrabold px-4">
-          Transforming Ideas into Digital Solutions
+            <Typewriter
+            onInit={(typewriter) => {
+            typewriter.typeString('Transforming Ideas into Digital Solutions')
+              .start()
+              .pauseFor(2000)
+              .deleteAll()
+              .typeString('Bringing Your Ideas to Life with Digital Expertise')
+              .start()
+              .pauseFor(2000)
+              .deleteAll()
+              .typeString('Crafting Dreams into Advanced Digital Realities')
+          }}
+      />
         </h1>
         <div className="flex flex-col justify-center items-center mt-7 gap-2 md:text-2xl font-thin text-center max-w-[500px]">
           <h2>
