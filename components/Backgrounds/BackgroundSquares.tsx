@@ -1,5 +1,11 @@
 export default function BackgroundSquares() {
   return (
-    <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"></div>
+    <div className="absolute inset-0 grid w-full h-full overflow-hidden border-t border-l border-[#2e2e2e] bg-black -z-10 _squares-grid">
+      {Array(10).fill(0).map(_e => (
+        Array(12).fill(0).map(_e => (
+          <div className="border-b border-r border-[#2e2e2e] h-full w-full bg-black pt-[100%]"></div>
+        ))
+      ))}
+    </div>
   );
 }

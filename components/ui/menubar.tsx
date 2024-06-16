@@ -27,7 +27,7 @@ const Menubar = React.forwardRef<
   <MenubarPrimitive.Root
     ref={ref}
     className={cn(
-      "flex h-9 items-center space-x-1 rounded-lg border bg-background p-1 shadow-sm",
+      "flex h-9 items-center space-x-1 text-white p-1 shadow-sm",
       className
     )}
     {...props}
@@ -42,7 +42,7 @@ const MenubarTrigger = React.forwardRef<
   <MenubarPrimitive.Trigger
     ref={ref}
     className={cn(
-      "flex cursor-default select-none items-center rounded-lg px-3 py-1 text-sm font-medium outline-none data-[state=open]:bg-blue-50 data-[state=open]:text-blue-500 hover:cursor-pointer transition-all",
+      "flex cursor-default select-none items-center text-gray-400 rounded-lg px-3 py-1 text-sm outline-none data-[state=open]:text-cyan-400 hover:cursor-pointer transition-all",
       className
     )}
     {...props}
@@ -59,14 +59,14 @@ const MenubarSubTrigger = React.forwardRef<
   <MenubarPrimitive.SubTrigger
     ref={ref}
     className={cn(
-      "flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-blue-50 data-[state=open]:text-blue-500",
+      "flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none focus:bg-accent focus:text-accent-foreground data-[state=open]:text-cyan-400",
       inset && "pl-8",
       className
     )}
     {...props}
   >
     {children}
-    <ChevronRightIcon className="ml-auto h-4 w-4" />
+    <ChevronRightIcon className="w-4 h-4 ml-auto" />
   </MenubarPrimitive.SubTrigger>
 ));
 MenubarSubTrigger.displayName = MenubarPrimitive.SubTrigger.displayName;
@@ -120,7 +120,7 @@ const MenubarItem = React.forwardRef<
   <MenubarPrimitive.Item
     ref={ref}
     className={cn(
-      "relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none focus:bg-blue-50 focus:text-blue-500 data-[disabled]:pointer-events-none data-[disabled]:opacity-50 hover:cursor-pointer transition-all",
+      "relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none focus:bg-blue-50 focus:text-cyan-400 data-[disabled]:pointer-events-none data-[disabled]:opacity-50 hover:cursor-pointer transition-all",
       inset && "pl-8",
       className
     )}
@@ -144,7 +144,7 @@ const MenubarCheckboxItem = React.forwardRef<
   >
     <span className="absolute left-2 flex h-3.5 w-3.5 items-center justify-center">
       <MenubarPrimitive.ItemIndicator>
-        <CheckIcon className="h-4 w-4" />
+        <CheckIcon className="w-4 h-4" />
       </MenubarPrimitive.ItemIndicator>
     </span>
     {children}
@@ -166,7 +166,7 @@ const MenubarRadioItem = React.forwardRef<
   >
     <span className="absolute left-2 flex h-3.5 w-3.5 items-center justify-center">
       <MenubarPrimitive.ItemIndicator>
-        <DotFilledIcon className="h-4 w-4 fill-current" />
+        <DotFilledIcon className="w-4 h-4 fill-current" />
       </MenubarPrimitive.ItemIndicator>
     </span>
     {children}

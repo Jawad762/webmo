@@ -12,6 +12,7 @@ export const dataLeft = [
     alt: "koala"
   }
 ];
+
 export const dataRight = [
   {
     src: "/octo.png",
