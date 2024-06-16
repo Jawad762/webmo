@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar/Navbar";
 const montserrat = Montserrat({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "WebmBo",
+  title: "WebMo",
   description: "Welcome To WebMo: a Lebanon-based agency specializing in custom Web and Mobile development."
 };
 
