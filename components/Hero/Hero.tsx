@@ -17,7 +17,7 @@ export default function Hero() {
 
   return (
     <section className="flex flex-col items-center justify-center px-4 text-white lg:px-32">
-      <div className="relative flex flex-col items-center justify-start w-full py-24 mt-4">
+      <div className="relative flex flex-col items-center justify-center w-full h-[500px] sm:h-[600px] mt-4">
         <div 
           className="text-center max-w-[700px] font-extrabold px-4 min-h-40 md:mb-8" 
           ref={typewriterContainerRef} 
@@ -33,7 +33,7 @@ export default function Hero() {
                   .typeString('Bringing Your Ideas to Life with Digital Expertise')
                   .pauseFor(2000)
                   .deleteAll()
-                  .typeString('Crafting Dreams into Digital Realities')
+                  .typeString('Crafting Your Dreams into Digital Realities')
                   .start();
               }}
             />

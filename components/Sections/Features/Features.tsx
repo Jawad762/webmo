@@ -1,5 +1,6 @@
 import { CiMobile1, CiDesktop } from 'react-icons/ci';
 import { FaCodepen } from "react-icons/fa";
+import { MdOutlineLocalGroceryStore } from "react-icons/md";
 
 export default function Features() {
   return (
@@ -20,7 +21,7 @@ export default function Features() {
             <p className="font-thin">Engaging mobile apps for iOS and Android to keep your audience connected.</p>
           </div>
           <div className="flex flex-col items-center gap-4 px-2 py-6 text-center lg:py-44">
-            <FaCodepen className="text-7xl"/>
+            <MdOutlineLocalGroceryStore className="text-7xl"/>
             <p className="text-3xl font-medium">E-commerce Store <br/> Management</p>
             <p className="font-thin">Comprehensive management of inventory, orders, and customer service to boost sales and satisfaction.</p>
           </div>
