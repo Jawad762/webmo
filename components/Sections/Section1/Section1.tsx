@@ -1,7 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { dataLeft, dataRight } from "./data";
-import { config } from "@/lib/config";
 import { RiNextjsFill } from "react-icons/ri";
 import { FaShopify, FaSwift, FaReact, FaAndroid, FaWordpress } from "react-icons/fa6";
 
@@ -23,7 +21,7 @@ export default function Section1() {
           <p className="mx-10 my-8 text-2xl font-thin text-center md:mx-6">
             Contact us to see how our tech stack can power your next business.
           </p>
-          <a target="_blank" href={'https://wa.me/96171482386'}>
+          <a target="_blank" href={'https://wa.me/96176854351'}>
             <Button>
               Contact us <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
